@@ -1,3 +1,4 @@
+const path = require("path");
 module.exports = {
     "stories": [
         "../src/**/*.stories.mdx",
@@ -33,7 +34,7 @@ module.exports = {
             include: [path.resolve(__dirname, '../src'), /[\\/]node_modules[\\/].*antd/],
         });
 
-        config.module.rules.push({
+       /* config.module.rules.push({
             test: /\.(ts|tsx)$/,
             use: [
                 {
@@ -43,7 +44,7 @@ module.exports = {
                     },
                 },
             ],
-        });
+        }); */
         // Return the altered config
         return config;
     },
